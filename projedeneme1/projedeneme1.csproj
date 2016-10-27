@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1BBA9CC2-01C3-4105-A6DC-F83BC6D5637F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>projedeneme1</RootNamespace>
+    <AssemblyName>projedeneme1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.WMPLib">
+      <HintPath>..\..\..\..\hastatakipsrc\HastaTakipG\HastaTakipG\bin\Debug\AxInterop.WMPLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.WMPLib">
+      <HintPath>..\..\..\..\hastatakipsrc\HastaTakipG\HastaTakipG\bin\Debug\Interop.WMPLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebCam_Capture">
+      <HintPath>..\..\..\..\hastatakipsrc\HastaTakipG\HastaTakipG\bin\Debug\WebCam_Capture.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BlokMlok.cs" />
+    <Compile Include="Blok_Oda.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFotoCek.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFotoCek.Designer.cs">
+      <DependentUpon>FormFotoCek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOgrBilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOgrBilgileri.Designer.cs">
+      <DependentUpon>FormOgrBilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOgrenciAra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOgrenciAra.Designer.cs">
+      <DependentUpon>FormOgrenciAra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOgrenciKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOgrenciKayit.Designer.cs">
+      <DependentUpon>FormOgrenciKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPersBilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPersBilgileri.Designer.cs">
+      <DependentUpon>FormPersBilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPersonelKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPersonelKayit.Designer.cs">
+      <DependentUpon>FormPersonelKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPersonelListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPersonelListele.Designer.cs">
+      <DependentUpon>FormPersonelListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPersonelSifreDegisim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPersonelSifreDegisim.Designer.cs">
+      <DependentUpon>FormPersonelSifreDegisim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormYataklar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormYataklar.Designer.cs">
+      <DependentUpon>FormYataklar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormYonetimSifreDegisim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormYonetimSifreDegisim.Designer.cs">
+      <DependentUpon>FormYonetimSifreDegisim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KimlikBilgileri.cs" />
+    <Compile Include="Kisi.cs" />
+    <Compile Include="KisiselBilgiler.cs" />
+    <Compile Include="KisiselBilgilerEk.cs" />
+    <Compile Include="OdaModa.cs" />
+    <Compile Include="Oda_Yatak.cs" />
+    <Compile Include="Ogrenci.cs" />
+    <Compile Include="OkulYurtBilgileri.cs" />
+    <Compile Include="Personel.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SaglikBilgileri.cs" />
+    <Compile Include="SiraKimlik.cs" />
+    <Compile Include="VeliBilgileri.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFotoCek.resx">
+      <DependentUpon>FormFotoCek.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOgrBilgileri.resx">
+      <DependentUpon>FormOgrBilgileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOgrenciAra.resx">
+      <DependentUpon>FormOgrenciAra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOgrenciKayit.resx">
+      <DependentUpon>FormOgrenciKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPersBilgileri.resx">
+      <DependentUpon>FormPersBilgileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPersonelKayit.resx">
+      <DependentUpon>FormPersonelKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPersonelListele.resx">
+      <DependentUpon>FormPersonelListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPersonelSifreDegisim.resx">
+      <DependentUpon>FormPersonelSifreDegisim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormYataklar.resx">
+      <DependentUpon>FormYataklar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormYonetimSifreDegisim.resx">
+      <DependentUpon>FormYonetimSifreDegisim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yatak2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yatak2dolu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yatak2doluz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yatak2doluzZ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yatak2doluzZz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boşRenk.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
